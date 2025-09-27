@@ -1,0 +1,8 @@
+fastapi==0.114.2
+uvicorn[standard]==0.30.6
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+mlx-lm==0.20.0
+selenium==4.24.0
+webdriver-manager==4.0.2

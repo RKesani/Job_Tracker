@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Job Scraper",
+  "version": "0.4",
+  "description": "Scrape visible text from any page",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Scrape Page"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
